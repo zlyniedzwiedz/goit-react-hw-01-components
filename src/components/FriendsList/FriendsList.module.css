@@ -1,0 +1,52 @@
+.friends {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  position: relative;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+}
+.online {
+  composes: status;
+  background-color: green;
+}
+.offline {
+  composes: status;
+  background-color: red;
+}
+.element {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  background: rgb(86, 111, 238);
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 200ms;
+}
+.element:hover {
+  transform: scale(1.05);
+}
+.img {
+  background: rgb(102, 124, 236);
+
+  padding: 5px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
