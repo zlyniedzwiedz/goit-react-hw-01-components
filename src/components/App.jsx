@@ -14,7 +14,7 @@ import { Counter } from "./Counter/Counter";
 export const App = () => {
   return (
     <div className={style.container}>
-      <div className={style.box}>
+      {/* <div className={style.box}>
         <>
           <Profile
             username={user.username}
@@ -33,11 +33,10 @@ export const App = () => {
       </div>
       <div className={style.box}>
         <TransactionsHistory data={transactionData} />
-      </div>
+      </div> */}
       <div className={style.box}>
         <Counter />
       </div>
-     
     </div>
   );
 };
