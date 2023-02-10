@@ -9,6 +9,7 @@ import { Profile } from "./Profile/Profile.jsx";
 import { Statistics } from "./Statistics/Statistics.jsx";
 import { FriendsList } from "./FriendsList/FriendsList.jsx";
 import { TransactionsHistory } from "./TransactionHistory/TransactionsHistory.jsx";
+import { Counter } from "./Counter/Counter";
 
 export const App = () => {
   return (
@@ -33,6 +34,10 @@ export const App = () => {
       <div className={style.box}>
         <TransactionsHistory data={transactionData} />
       </div>
+      <div className={style.box}>
+        <Counter />
+      </div>
+     
     </div>
   );
 };

@@ -1,0 +1,27 @@
+.counterButton {
+  display: flex;
+  margin-bottom: 25px;
+  margin-left: 80px;
+  width: 300px;
+  height: 70px;
+  border-radius: 15px;
+  border: none;
+  background: rgb(86, 111, 238);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  transition-duration: 200ms;
+  align-items: center;
+  padding-left: 60px;
+  position: relative;
+  font-size: 18px;
+}
+.counterButton:active {
+    transform: scale(0.9);
+}
+.counterDisplay {
+  font-size: 20px;
+}
+.counterContainer {
+    
+  margin: auto;
+  margin-bottom: 50px;
+}
