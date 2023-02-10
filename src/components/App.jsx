@@ -34,9 +34,6 @@ export const App = () => {
       <div className={style.box}>
         <TransactionsHistory data={transactionData} />
       </div>
-
-
-      
       <div className={style.box}>
         <Counter />
       </div>
