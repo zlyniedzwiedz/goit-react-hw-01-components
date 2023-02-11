@@ -1,7 +1,9 @@
 .counterButton {
   display: flex;
+  flex-direction: column;
+  margin-left: 5px;
   margin-bottom: 25px;
-  margin-left: 80px;
+  position: relative;
   width: 300px;
   height: 70px;
   border-radius: 15px;
@@ -9,18 +11,25 @@
   background: rgb(86, 111, 238);
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
   transition-duration: 200ms;
-  align-items: center;
+  padding-top: 25px;
   padding-left: 60px;
   position: relative;
   font-size: 18px;
+  color: #fff;
+}
+.counterButton:last-child {
+  margin-bottom: 10px;
 }
 .counterButton:active {
   transform: scale(0.9);
 }
 .counterDisplay {
-  font-size: 20px;
+  font-size: 48px;
+  margin-left: 40px;
+  color: #fff;
 }
-.counterContainer {
-  margin: auto;
-  margin-bottom: 50px;
+.counterStep {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 41%;
 }

@@ -41,11 +41,12 @@ export class Counter extends Component {
     // const { step } = this.props;
 
     return (
-      <div className={css.counterContainer}>
+      <div>
         <p className={css.counterDisplay}>
-          Current Value : {this.state.value} Increase or decrease by a step of :
-          {this.state.step}
+         {this.state.value} 
         </p>
+        <p className={css.counterStep}>Step:{" "}
+          {this.state.step}</p>
         <button className={css.counterButton} onClick={this.add}>
           Add {this.state.step}
         </button>
