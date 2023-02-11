@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import css from "./Counter.module.css";
 export class Counter extends Component {
   state = {
@@ -39,22 +39,28 @@ export class Counter extends Component {
     return (
       <div>
         <p className={css.counterDisplay}>{this.state.value}</p>
-        <p className={css.counterStep}>Step: {this.state.step}</p>
-        <button className={css.counterButton} onClick={this.add}>
-          Add {this.state.step}
-        </button>
-        <button className={css.counterButton} onClick={this.addStep}>
-          Increase step by 1!
-        </button>
-        <button className={css.counterButton} onClick={this.substract}>
-          Substract {this.state.step}!
-        </button>
-        <button className={css.counterButton} onClick={this.substractStep}>
-          Decrease step by 1!
-        </button>
-        <button className={css.counterButton} onClick={this.reset}>
-          Reset counter!
-        </button>
+        <div className={css.buttonGroup}>
+          <button className={css.counterButton} onClick={this.add}>
+            +
+          </button>
+          <button className={css.counterButton} onClick={this.substract}>
+            -
+          </button>
+        </div>
+        <div className={css.buttonGroup}>
+          <p className={css.counterStep}>Step: {this.state.step}</p>
+          <button className={css.counterButton} onClick={this.addStep}>
+            Increase step
+          </button>
+          <button className={css.counterButton} onClick={this.substractStep}>
+            Decrease step
+          </button>
+        </div>
+        <div className={css.buttonGroup}>
+          <button className={css.counterButton} onClick={this.reset}>
+            Reset counter!
+          </button>
+        </div>
       </div>
     );
   }
