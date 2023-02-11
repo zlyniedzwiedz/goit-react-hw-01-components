@@ -7,19 +7,16 @@ export class Counter extends Component {
   };
 
   add = () => {
-    console.log(this.state.value);
     this.setState((state) => ({
       value: this.state.value + this.state.step,
     }));
   };
   addStep = () => {
-    console.log(this.state.value);
     this.setState((state) => ({
       step: this.state.step + 1,
     }));
   };
   substract = () => {
-    console.log(this.state.value);
     this.setState((state) => ({
       value: this.state.value - this.state.step,
     }));
@@ -30,7 +27,6 @@ export class Counter extends Component {
     }));
   };
   reset = () => {
-    console.log(this.state.value);
     this.setState({
       value: 0,
       step: 1,
@@ -42,11 +38,8 @@ export class Counter extends Component {
 
     return (
       <div>
-        <p className={css.counterDisplay}>
-         {this.state.value} 
-        </p>
-        <p className={css.counterStep}>Step:{" "}
-          {this.state.step}</p>
+        <p className={css.counterDisplay}>{this.state.value}</p>
+        <p className={css.counterStep}>Step: {this.state.step}</p>
         <button className={css.counterButton} onClick={this.add}>
           Add {this.state.step}
         </button>
